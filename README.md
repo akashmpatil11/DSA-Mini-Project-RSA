@@ -1,17 +1,26 @@
-# DSA-Mini-Project-AES
+# DSA-Mini-Project-RSA
+## Name: PATIL AKASH M.
+## MIS No: 111503075
 ## RSA Encryption using C
-  This program encrypts/decrypts given text file RSA
+  This program encrypts/decrypts given text file using RSA
   asymmectric algorithm.
 
-### Work Done Till now
+### About Project
   <ul>
-    <li>Able to generate random 100 digit odd bignum(which) has to be checked for prime</li>
-    <li>Able to add two bignum</li>
-    <li>Able to multiply two bignum</li>
+    <li>RSA algorithm uses two big (100 digit) prime numbers to generate Public and Private key</li>
+    <li>For computation GMP Library (GNU Multiple Precision Arithmetic Library) is used</li>
+    <li>For genrating prime <em>Miller-Rabin algorithm</em> is used</li>
+    <li>This Program takes input as text file from user and encrypts data and also saves Private Key in another file</li>
+    <li>Using Private Key User can decrypt data again</li>
    </ul>
-### Problems to be solved
+
+### Usage
   <ul>
-    <li>Miller-rabin Test function to be done</li>
-    <li>Modulus of two bignum to be done</li>
-    <li>Public key and Private key to be generated using above functions</li>
-   </ul>
+      $ make
+    <li>For Help</li>
+      $ ./program -h<br>
+     <li>For Encryption</li>
+      $ ./program -e filename1 filename2 filename3<br>
+     <li>For Decryption</li>
+      $ ./program -d filename1 filename2 filename3<br>
+  </ul>
