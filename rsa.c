@@ -1,3 +1,22 @@
+/*****************************************************************************
+ * RSA Encryption-Decryption in C
+ *
+ * Copyright (C) Akash Patil akashmpatil11@gmail.com
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2.1 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston MA 02110-1301, USA.
+ *****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -242,6 +261,7 @@ int main(int argc, char *argv[]) {
 		fclose(fp1);
 		fclose(fp2);
 		fclose(fp3);
+		return 0;
 		}
 	else if(!strcmp(argv[1], "-d")) {
 		mpz_t d, n;
@@ -263,6 +283,16 @@ int main(int argc, char *argv[]) {
 		AntiCipher(fp1, fp2, d, n);
 		mpz_clear(d);
 		mpz_clear(n);
+		return 0;
 	}
-	return 0;
+	else {
+		printf("for help:\n  ./project -h\n");
+		printf("for encryption:\n  Usage: ./project -e <filename1> <filename2>\n");
+		printf("    filename1: file to be encrypted\n    filename2: encrypted file\n");
+		printf("for decryption:\n  Usage: ./project -d <filename1> <filename2>\n");
+		printf("    filename1: file to be decrypted\n    filename2: decrypted file\n");
+		return 0;
+
+	}
+
 }
