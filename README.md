@@ -16,6 +16,8 @@
 
 ### Usage
   <ul>
+      $ ./run.sh
+    <li>Use this command to install gmp.h and time.h and then get executable file named project</li> 
       $ make
     <li>For Help</li>
       $ ./project -h<br>
