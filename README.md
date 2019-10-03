@@ -16,11 +16,13 @@
 
 ### Usage
   <ul>
+      $ ./run.sh
+    <li>Use this command to install gmp.h and time.h and then get executable file named project</li> 
       $ make
     <li>For Help</li>
-      $ ./program -h<br>
+      $ ./project -h<br>
      <li>For Encryption</li>
-      $ ./program -e filename1 filename2 filename3<br>
+      $ ./project -e filename1 filename2 filename3<br>
      <li>For Decryption</li>
-      $ ./program -d filename1 filename2 filename3<br>
+      $ ./project -d filename1 filename2 filename3<br>
   </ul>
